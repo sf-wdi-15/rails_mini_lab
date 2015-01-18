@@ -1,0 +1,13 @@
+<%=  form_for article do |f| %>
+
+  <div>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.text_area :content, rows: 10 %>
+  </div>
+
+  <%= f.submit %>
+  
+<% end %>
