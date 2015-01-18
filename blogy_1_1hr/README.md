@@ -22,3 +22,9 @@
 * Forgot to add `logout`.
 * Forgot about simple `nav` in `application_controller`.
 * Forgot about adding simple `model` validations
+
+### Target Time
+
+```
+~ 45 mins
+```
