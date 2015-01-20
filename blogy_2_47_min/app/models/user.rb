@@ -26,6 +26,8 @@ class User < ActiveRecord::Base
     user.try(:authenticate, password_param)
   end
 
+  ## These need tests too
+
   def password_required?
      self.new_record? or !self.password.nil?
   end

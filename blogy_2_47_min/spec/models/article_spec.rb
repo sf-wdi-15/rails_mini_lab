@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Article, :type => :model do
 
+    subject { FactoryGirl.create(:user) }
+
     describe "validations" do
 
       it "should require presence of :content" do
@@ -33,8 +35,18 @@ RSpec.describe Article, :type => :model do
 
     describe "#author" do
 
-      it "should return the associated author" do
-
+      it "should respond_to :author" do
+        article = FactoryGirl.create(:article)
+        expect(article).to respond_to(:author)
       end
+
+      it "should return the associated author" do
+        article = FactoryGirl.create(:article)
+        subject.articles.push article
+        author = "#{subject[:last_name]}, #{subject[:first_name]}"
+        expect(article.author).to eq(author)
+      end
+
     end
+
 end
