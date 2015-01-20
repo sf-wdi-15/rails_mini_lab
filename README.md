@@ -7,6 +7,12 @@
 | :--- |
 | Try to complete the following functionality in `3` hours maximum with a target time of `2` hours. Being able to do it once in under `3` hours is not enough. Everyone should do this at least twice to establish some kind of average work time. |
 
+* Want the lastest changes for you fork?
+  * `git remote add upstream https://github.com/sf-wdi-15/rails_mini_lab.git`
+  * `git fetch upstream`
+  * Take a look at the remote branches
+    * `git branch -r` "The ones with upstream are the ones to pay attention to."
+
 NOTE: Please use a timer to time yourself when working on part 1. You'll be doing part 1 at least twice! Please have your two `best` times recorded and ready to share on Monday, and have notes of questions that came up when doing this process.
 
 Resources:
