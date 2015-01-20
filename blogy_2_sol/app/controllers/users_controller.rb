@@ -28,7 +28,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by({id: params[:id]})
     @articles = @user.articles
-    @articles.each {|article| article.get_keywords }
   end
 
   def edit
