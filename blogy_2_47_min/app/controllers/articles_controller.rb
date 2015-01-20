@@ -4,7 +4,6 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = current_user.articles
-    @articles.each {|article| article.get_keywords }
   end
 
   def new
@@ -22,7 +21,6 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find_by({id: params[:id]})
-    @article.get_keywords
   end
 
   def edit
